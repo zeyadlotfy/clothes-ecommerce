@@ -30,6 +30,7 @@ export const ourFileRouter = {
             return { uploadedBy: metadata.userId };
         }),
 
+
     bannerImageRoute: f({ image: { maxFileSize: "4MB", maxFileCount: 1 } })
         // Set permissions and file types for this FileRoute
         .middleware(async () => {
